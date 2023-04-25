@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockControlProject.Entities", "StockControlProject.Entities\StockControlProject.Entities.csproj", "{038DA709-9F24-47B4-BB0F-D9829CE58C49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockControlProject.Repository", "StockControlProject.Repository\StockControlProject.Repository.csproj", "{36EC8E1D-C987-471B-85BA-843A2B62BC9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{038DA709-9F24-47B4-BB0F-D9829CE58C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{038DA709-9F24-47B4-BB0F-D9829CE58C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{038DA709-9F24-47B4-BB0F-D9829CE58C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36EC8E1D-C987-471B-85BA-843A2B62BC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36EC8E1D-C987-471B-85BA-843A2B62BC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36EC8E1D-C987-471B-85BA-843A2B62BC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36EC8E1D-C987-471B-85BA-843A2B62BC9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

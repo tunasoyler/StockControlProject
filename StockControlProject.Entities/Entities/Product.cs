@@ -9,6 +9,11 @@ namespace StockControlProject.Entities.Entities
 {
     public class Product : BaseEntity
     {
+        public Product()
+        {
+            OrderDetails = new List<OrderDetails>();
+        }
+
         public string ProductName { get; set; }
         public decimal UnitPrice { get; set; }
         public short? Stock { get; set; }
@@ -21,5 +26,7 @@ namespace StockControlProject.Entities.Entities
         [ForeignKey("Supplier")]
         public int SupplierId { get; set; }
         public virtual Supplier? Supplier { get; set; }
+
+        public List<OrderDetails> OrderDetails { get; set; }
     }
 }
