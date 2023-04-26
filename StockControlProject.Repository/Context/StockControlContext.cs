@@ -10,10 +10,10 @@ namespace StockControlProject.Repository.Context
 {
     public class StockControlContext : DbContext
     {
-        //public StockControlContext(DbContextOptions<StockControlContext> options) : base(options)
-        //{
+        public StockControlContext(DbContextOptions<StockControlContext> options) : base(options)
+        {
 
-        //}
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
