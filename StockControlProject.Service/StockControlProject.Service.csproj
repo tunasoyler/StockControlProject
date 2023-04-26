@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StockControlProject.Entities\StockControlProject.Entities.csproj" />
+    <ProjectReference Include="..\StockControlProject.Repository\StockControlProject.Repository.csproj" />
+  </ItemGroup>
+
 </Project>
