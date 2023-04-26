@@ -10,6 +10,6 @@ namespace StockControlProject.Entities.Enums
     {
         Pending = 0,
         Cancelled = 1,
-        Confirmed = 2
+        Completed = 2
     }
 }
