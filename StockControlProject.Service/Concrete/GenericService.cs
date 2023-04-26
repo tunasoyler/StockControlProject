@@ -101,23 +101,19 @@ namespace StockControlProject.Service.Concrete
                 return false;
             else
                 return repository.Remove(id);
-
-
         }
 
         public bool RemoveAll(Expression<Func<T, bool>> exp)
         {
-            throw new NotImplementedException();
-        }
-
-        public int Save()
-        {
-            throw new NotImplementedException();
+            return repository.RemoveAll(exp);
         }
 
         public bool Update(T entity)
         {
-            throw new NotImplementedException();
+            if (entity == null)
+                return false;
+            else
+                return repository.Update(entity);
         }
     }
 }

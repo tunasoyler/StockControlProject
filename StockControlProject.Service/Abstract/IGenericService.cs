@@ -26,6 +26,5 @@ namespace StockControlProject.Service.Abstract
         IQueryable<T> GetAll(Expression<Func<T, bool>> exp, params Expression<Func<T, object>>[] includes);
         bool Activate(int id);
         bool Any(Expression<Func<T, bool>> exp);
-        int Save();
     }
 }
