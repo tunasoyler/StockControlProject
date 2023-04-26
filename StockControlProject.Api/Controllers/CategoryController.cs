@@ -58,6 +58,40 @@ namespace StockControlProject.Api.Controllers
                     return NotFound();
             }
             return NoContent();
-        }        
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteCategory(int id)
+        {
+            var category = service.GetById(id);
+            if (category == null)
+                return NotFound();
+            try
+            {
+                service.Remove(category);
+                return Ok("Category deleted");
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult ActivateCategory(int id)
+        {
+            var category = service.GetById(id);
+            if(category == null)
+                return NotFound();
+            try
+            {
+                service.Activate(id);
+                return Ok(category);
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+        }
     }
 }
